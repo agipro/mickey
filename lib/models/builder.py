@@ -8,7 +8,7 @@ def build_model(cfg, checkpoint=''):
 
         model = MickeyRelativePose(cfg)
 
-        checkpoint_loaded = torch.load(checkpoint)
+        checkpoint_loaded = torch.load(checkpoint, map_location=torch.device('cpu'))
         model.on_load_checkpoint(checkpoint_loaded)
         model.load_state_dict(checkpoint_loaded['state_dict'])
 
