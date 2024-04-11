@@ -1,6 +1,6 @@
 import torch
-from lib.models.MicKey.modules.loss.solvers import weighted_procrustes
-from lib.models.MicKey.modules.utils.training_utils import backproject_3d, soft_inlier_counting_3d, inlier_counting_3d
+from ..loss.solvers import weighted_procrustes
+from .training_utils import backproject_3d, soft_inlier_counting_3d, inlier_counting_3d
 
 class e2eProbabilisticProcrustesSolver():
     """

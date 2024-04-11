@@ -1,7 +1,7 @@
 import pytorch_lightning as pl
 
-from lib.models.MicKey.modules.compute_correspondences import ComputeCorrespondences
-from lib.models.MicKey.modules.utils.probabilisticProcrustes import e2eProbabilisticProcrustesSolver
+from .modules.compute_correspondences import ComputeCorrespondences
+from .modules.utils.probabilisticProcrustes import e2eProbabilisticProcrustesSolver
 
 class MickeyRelativePose(pl.LightningModule):
     # Compute the metric relative pose between two input images, with given intrinsics (for the pose solver).

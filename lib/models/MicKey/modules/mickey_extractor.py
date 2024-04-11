@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from lib.models.MicKey.modules.DINO_modules.dinov2 import vit_large
-from lib.models.MicKey.modules.att_layers.transformer import Transformer_self_att
-from lib.models.MicKey.modules.utils.extractor_utils import desc_l2norm, BasicBlock
+from .DINO_modules.dinov2 import vit_large
+from .att_layers.transformer import Transformer_self_att
+from .utils.extractor_utils import desc_l2norm, BasicBlock
 
 class MicKey_Extractor(nn.Module):
     def __init__(self, cfg, dinov2_weights=None):

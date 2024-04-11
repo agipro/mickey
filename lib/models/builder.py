@@ -1,6 +1,6 @@
 import torch.cuda
 
-from lib.models.MicKey.compute_pose import MickeyRelativePose
+from .MicKey.compute_pose import MickeyRelativePose
 
 def build_model(cfg, checkpoint=''):
 

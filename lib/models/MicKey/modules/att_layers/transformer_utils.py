@@ -1,7 +1,7 @@
 
 import torch
 import torch.nn as nn
-from lib.models.MicKey.modules.att_layers.attention import Attention
+from .attention import Attention
 
 class EncoderLayer(nn.Module):
     """

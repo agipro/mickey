@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from lib.models.MicKey.modules.mickey_extractor import MicKey_Extractor
-from lib.models.MicKey.modules.utils.feature_matcher import featureMatcher
+from .mickey_extractor import MicKey_Extractor
+from .utils.feature_matcher import featureMatcher
 
 class ComputeCorrespondences(nn.Module):
     def __init__(self, cfg):

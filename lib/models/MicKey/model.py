@@ -1,10 +1,10 @@
 import torch
 import pytorch_lightning as pl
 
-from lib.models.MicKey.modules.loss.loss_class import MetricPoseLoss
-from lib.models.MicKey.modules.compute_correspondences import ComputeCorrespondences
-from lib.models.MicKey.modules.utils.training_utils import log_image_matches, debug_reward_matches_log, vis_inliers
-from lib.models.MicKey.modules.utils.probabilisticProcrustes import e2eProbabilisticProcrustesSolver
+from .modules.loss.loss_class import MetricPoseLoss
+from .modules.compute_correspondences import ComputeCorrespondences
+from .modules.utils.training_utils import log_image_matches, debug_reward_matches_log, vis_inliers
+from .modules.utils.probabilisticProcrustes import e2eProbabilisticProcrustesSolver
 
 from lib.utils.metrics import pose_error_torch, vcre_torch
 from lib.benchmarks.utils import precision_recall
