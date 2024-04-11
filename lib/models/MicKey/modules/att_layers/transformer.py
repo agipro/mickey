@@ -4,7 +4,7 @@ import math
 import torch
 import torch.nn as nn
 from einops.einops import rearrange
-from lib.models.MicKey.modules.att_layers.transformer_utils import EncoderLayer
+from .transformer_utils import EncoderLayer
 import torch.nn.functional as F
 
 class PositionEncodingSine(nn.Module):
